@@ -6,24 +6,13 @@ $primary-color: #50b1a9;
 $gray-color: #b3b3b3;
 
 $transition: all 200ms ease-in-out;
-$animation: fadeEffect-header 400ms ease forward;
-
-@keyframes fadeEffect-header {
-  from {
-    color: $black-color;
-    background-color: transparent;
-  }
-  to {
-    color: $white-color;
-    background-color: $primary-color;
-  }
-}
 
 %title {
   color: $white-color;
 
   font-family: 'Raleway', sans-serif;
   font-size: pxToRem(24px);
+  font-weight: 300;
   line-height: 1.3em;
 }
 
@@ -32,13 +21,18 @@ $animation: fadeEffect-header 400ms ease forward;
 
   font-family: 'Raleway', sans-serif;
   font-size: pxToRem(64px);
+  font-weight: 300;
   line-height: 1.3em;
 }
 
-%link {
-  font-family: 'Raleway', sans-serif;
-  font-size: pxToRem(64px);
-  line-height: 1.3em;
+%menu-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: pxToRem(16px);
+  line-height: pxToRem(24px);
+  white-space: nowrap;
+
+  outline: none;
+  cursor: pointer;
 }
 
 @function pxToRem($pxValue) {
