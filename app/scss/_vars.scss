@@ -7,13 +7,16 @@ $gray-color: #b3b3b3;
 
 $transition: all 200ms ease-in-out;
 
+$border_radius: 5px;
+
 %title {
   color: $white-color;
 
   font-family: 'Raleway', sans-serif;
-  font-size: pxToRem(24px);
+  font-size: pxToRem(36px);
   font-weight: 300;
   line-height: 1.3em;
+  word-break: break-word;
 }
 
 %big_title {
@@ -23,6 +26,7 @@ $transition: all 200ms ease-in-out;
   font-size: pxToRem(64px);
   font-weight: 300;
   line-height: 1.3em;
+  word-break: break-word;
 }
 
 %menu-link {

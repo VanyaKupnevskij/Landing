@@ -16,7 +16,7 @@ body {
 
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: pxToRem(16px);
+  font-size: pxToRem(18px);
   line-height: 1.6em;
 }
 
@@ -56,6 +56,18 @@ body {
 
   background-color: $white-color;
   color: $black-color;
+
+  border-radius: $border_radius;
+
+  font-size: pxToRem(16px);
+  line-height: 1.3em;
+
+  transition: $transition;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #e6e6e6;
+  }
 }
 
 .black-button {
@@ -63,6 +75,18 @@ body {
 
   background-color: $black-color;
   color: $white-color;
+
+  border-radius: $border_radius;
+
+  font-size: pxToRem(16px);
+  line-height: 1.3em;
+
+  transition: $transition;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1e1e1e;
+  }
 }
 
 *::-webkit-scrollbar {
