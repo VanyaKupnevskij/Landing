@@ -1,0 +1,46 @@
+@use 'sass:math';
+
+$black-color: #000000;
+$white-color: #ffffff;
+$primary-color: #50b1a9;
+$gray-color: #b3b3b3;
+
+$transition: all 200ms ease-in-out;
+$animation: fadeEffect-header 400ms ease forward;
+
+@keyframes fadeEffect-header {
+  from {
+    color: $black-color;
+    background-color: transparent;
+  }
+  to {
+    color: $white-color;
+    background-color: $primary-color;
+  }
+}
+
+%title {
+  color: $white-color;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: pxToRem(24px);
+  line-height: 1.3em;
+}
+
+%big_title {
+  color: $white-color;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: pxToRem(64px);
+  line-height: 1.3em;
+}
+
+%link {
+  font-family: 'Raleway', sans-serif;
+  font-size: pxToRem(64px);
+  line-height: 1.3em;
+}
+
+@function pxToRem($pxValue) {
+  @return math.div($pxValue, 16px) * 1rem;
+}
