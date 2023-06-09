@@ -70,7 +70,8 @@
     &::after {
       content: '';
       position: absolute;
-      bottom: 2px;
+      bottom: 4px;
+      transform: translateY(0);
       left: pxToRem(20px);
       right: pxToRem(20px);
       height: 2px;
@@ -86,7 +87,7 @@
 
     &:hover::after,
     &--active::after {
-      bottom: 0px;
+      transform: translateY(4px);
 
       opacity: 1;
     }
