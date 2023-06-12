@@ -98,29 +98,22 @@
 
 .footer {
   &__content {
-    background-color: #dfdfdf;
-    padding: 61px 0 80px;
+    background-color: $primary-color;
+    padding: pxToRem(80px) 0 pxToRem(60px);
   }
 
-  &__inner {
+  &__menu-list {
     display: flex;
-    justify-content: space-between;
-  }
-
-  &__menu {
-    width: 125px;
-    margin-right: 60px;
-  }
-
-  &__menu-item {
-    margin-bottom: 15px;
-    font-weight: 600;
-    font-size: 14px;
-    position: relative;
+    justify-content: center;
   }
 
   &__menu-link {
-    color: #707070;
+    padding: pxToRem(10px);
+
+    color: $white-color;
+
+    text-decoration: underline;
+    font-size: pxToRem(16px);
   }
 }
 
@@ -223,6 +216,7 @@
 .section4 {
   display: flex;
   align-items: center;
+  min-height: pxToRem(900px);
 
   overflow: hidden;
 
