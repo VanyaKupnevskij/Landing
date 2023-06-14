@@ -1,0 +1,9 @@
+.home_main {
+  .section:nth-child(2n) {
+    background-color: $primary-color;
+
+    & .section__background-overlay {
+      background-color: rgba($primary-color, 0.77);
+    }
+  }
+}

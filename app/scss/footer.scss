@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  justify-content: center;
+
+  &__content {
+    background-color: $primary-color;
+    padding: pxToRem(80px) 0 pxToRem(60px);
+  }
+
+  &__menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: pxToRem(5px);
+  }
+
+  &__menu-link {
+    padding: pxToRem(10px);
+
+    color: $white-color;
+
+    text-decoration: underline;
+    font-size: pxToRem(16px);
+
+    transition: all 100ms;
+
+    &:hover {
+      color: rgba($white-color, 0.7);
+    }
+  }
+
+  @media (max-width: $mobile-width2) {
+    &__menu-list {
+      flex-direction: column;
+    }
+  }
+}
