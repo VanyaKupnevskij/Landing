@@ -19,6 +19,10 @@ $mobile-width: 880px;
   font-weight: 300;
   line-height: 1.3em;
   word-break: break-word;
+
+  @media (max-width: 1280px) {
+    font-size: pxToRem(24px);
+  }
 }
 
 %big_title {
@@ -29,6 +33,10 @@ $mobile-width: 880px;
   font-weight: 300;
   line-height: 1.3em;
   word-break: break-word;
+
+  @media (max-width: 800px) {
+    font-size: pxToRem(40px);
+  }
 }
 
 %menu-link {

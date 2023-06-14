@@ -248,6 +248,9 @@
 // footer
 
 .footer {
+  display: flex;
+  justify-content: center;
+
   &__content {
     background-color: $primary-color;
     padding: pxToRem(80px) 0 pxToRem(60px);
@@ -256,6 +259,8 @@
   &__menu-list {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: pxToRem(5px);
   }
 
   &__menu-link {
@@ -270,6 +275,12 @@
 
     &:hover {
       color: rgba($white-color, 0.7);
+    }
+  }
+
+  @media (max-width: 800px) {
+    &__menu-list {
+      flex-direction: column;
     }
   }
 }
@@ -296,6 +307,10 @@
     height: 100%;
 
     object-fit: cover;
+
+    @media (max-width: 800px) {
+      max-height: 100vw;
+    }
   }
   &__background-overlay {
     content: '';
@@ -317,7 +332,7 @@
 
     z-index: 6;
 
-    padding: pxToRem(20px);
+    padding: pxToRem(20px) pxToRem(25px);
     height: 100%;
   }
 
@@ -359,10 +374,6 @@
   }
   &__title {
     @extend %title;
-
-    @media (max-width: 1280px) {
-      font-size: pxToRem(24px);
-    }
   }
   &__link {
     margin-top: pxToRem(40px);
@@ -407,6 +418,8 @@
     width: 50%;
     height: 100%;
     right: 0;
+
+    overflow: hidden;
   }
 
   @media (max-width: 800px) {
