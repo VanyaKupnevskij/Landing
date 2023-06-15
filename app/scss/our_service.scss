@@ -18,6 +18,8 @@
 .section:nth-child(2n).our_service_section1,
 .section:nth-child(2n).our_service_section2 {
   flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
 
   .section__image {
     left: 0;

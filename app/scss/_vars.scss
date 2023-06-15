@@ -37,7 +37,7 @@ $normal-width: 1280px;
   word-break: break-word;
 
   @media (max-width: 800px) {
-    font-size: pxToRem(40px);
+    font-size: pxToRem(40px) !important;
   }
 }
 

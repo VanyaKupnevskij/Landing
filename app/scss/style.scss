@@ -3,16 +3,14 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
-@import 'home';
-@import 'header';
-@import 'footer';
-@import 'our_service';
-@import 'gallery';
 
 // sections
 .section {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   background-color: $gray-color;
 
@@ -112,8 +110,9 @@
   position: relative;
   display: flex;
   align-items: center;
-  min-height: pxToRem(900px);
   height: fit-content;
+  justify-content: center;
+  align-items: flex-start;
 
   overflow: hidden;
 
@@ -159,3 +158,9 @@
     }
   }
 }
+
+@import 'home';
+@import 'header';
+@import 'footer';
+@import 'our_service';
+@import 'gallery';
