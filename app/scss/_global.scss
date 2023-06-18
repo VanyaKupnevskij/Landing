@@ -51,41 +51,35 @@ body {
   visibility: hidden;
 }
 
+.black-button,
 .white-button {
   padding: pxToRem(16px) pxToRem(30px);
-
-  background-color: $white-color;
-  color: $black-color;
+  width: fit-content;
 
   border-radius: $border_radius;
 
   font-size: pxToRem(16px);
   line-height: 1.3em;
+  font-weight: 300;
 
   transition: $transition;
   cursor: pointer;
-
-  &:hover {
-    background-color: #e6e6e6;
-  }
 }
 
 .black-button {
-  padding: pxToRem(16px) pxToRem(30px);
-
   background-color: $black-color;
   color: $white-color;
 
-  border-radius: $border_radius;
-
-  font-size: pxToRem(16px);
-  line-height: 1.3em;
-
-  transition: $transition;
-  cursor: pointer;
+  &:hover {
+    background-color: #272727;
+  }
+}
+.white-button {
+  background-color: $white-color;
+  color: $black-color;
 
   &:hover {
-    background-color: #1e1e1e;
+    background-color: #e6e6e6;
   }
 }
 

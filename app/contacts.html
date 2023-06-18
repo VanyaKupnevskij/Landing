@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Buchung und Kontakt | Baltic Booth</title>
-    <meta name="description" content="Buchung und Kontakt | Baltic Booth" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+    user-scalable=no" />
+    <title>Buchung und Kontakt | Fotobox Hahn</title>
+    <meta name="description" content="Buchung und Kontakt">
     <link rel="apple-touch-icon" href="logo512.png" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="manifest" href="manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />    
   </head>
 
   <body>
@@ -21,340 +27,175 @@
       <header class="header">
         <div class="container">
           <div class="header__inner">
+            <a class="logo">Fotobox Hahn</a>
+
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="out_services.html">About</a>
+                  <a class="menu__list-link" href="index.html">Home</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="gallery.html">Gallery</a>
+                  <a class="menu__list-link" href="gallery.html">Galerie</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="our_services.html">Unsere Leistungen</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="price.html">Preise</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link menu__list-link--active">Buchung und Kontakt</a>
                 </li>
               </ul>
             </nav>
-            <a class="logo" href="index.html">
-              <img src="images/logo.png" alt="Logo" />
-            </a>
-            <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="blog.html">Blog</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link menu__list-link--active">Contact</a>
-                </li>
-              </ul>
-            </nav>
-            <button class="header__btn">
-              <img src="images/icon_menu.svg" alt="icon menu" />
-            </button>
-            <div class="rightside-menu rightside-menu--close">
-              <button class="rightside-menu__close">
-                <img src="images/rightside-menu__close.svg" alt="" />
-              </button>
-              <div class="rightside-menu__content">
-                <a class="rightside-menu__logo" href="#">
-                  <img src="images/logo_big.png" alt="logo" />
-                </a>
-                <h4 class="rightside-menu__title">Furniture for life</h4>
-                <p class="rightside-menu__text">
-                  Sustainable hot chicken skateboard, dreamcatcher meggings actually squid.
-                  Slow-carb everyday carry +1 art party microdosing, put a bird on it brooklyn
-                </p>
-                <img
-                  class="rightside-menu__images"
-                  src="images/content/rightside-menu__image.jpg"
-                  alt="image"
-                />
+            <a
+              class="instagram instagram--scrolled"
+              href="https://www.instagram.com/balticbooth/"
+              target="_blank"
+            >
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 0 20 20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Social/Instagram" transform="translate(-10.000000, -10.000000)">
+                    <path
+                      d="M24.0335249,11.8763976 C26.7380658,11.9994825 28.0013491,13.2827256 28.124434,15.9673067 C28.17267,17.0193498 28.1818182,17.3353786 28.1818182,20 C28.1818182,22.6654531 28.1718383,22.9806502 28.124434,24.0326933 C28.0005175,26.7147794 26.7405607,28.0005175 24.0335249,28.1236024 C22.9806502,28.1718383 22.6662847,28.1818182 20,28.1818182 C17.3353786,28.1818182 17.0193498,28.1718383 15.9673067,28.1236024 C13.2561127,27.9996858 11.9994825,26.7106212 11.8763976,24.0318616 C11.8281617,22.9798185 11.8181818,22.6646214 11.8181818,19.9991683 C11.8181818,17.3345469 11.8289933,17.0193498 11.8763976,15.9664751 C12.0003142,13.2827256 13.2602709,11.9986509 15.9673067,11.875566 C17.0201815,11.8281617 17.3353786,11.8181818 20,11.8181818 C22.6646214,11.8181818 22.9806502,11.8281617 24.0335249,11.8763976 Z M20,10 C17.2841667,10 16.9441667,10.0116667 15.8775,10.06 C12.2458333,10.2266667 10.2275,12.2416667 10.0608333,15.8766667 C10.0116667,16.9441667 10,17.2841667 10,20 C10,22.7158333 10.0116667,23.0566667 10.06,24.1233333 C10.2266667,27.755 12.2416667,29.7733333 15.8766667,29.94 C16.9441667,29.9883333 17.2841667,30 20,30 C22.7158333,30 23.0566667,29.9883333 24.1233333,29.94 C27.7516667,29.7733333 29.775,27.7583333 29.9391667,24.1233333 C29.9883333,23.0566667 30,22.7158333 30,20 C30,17.2841667 29.9883333,16.9441667 29.94,15.8775 C29.7766667,12.2491667 27.7591667,10.2275 24.1241667,10.0608333 C23.0566667,10.0116667 22.7158333,10 20,10 Z M20,14.5454545 C16.9876958,14.5454545 14.5454545,16.9874977 14.5454545,19.9995574 C14.5454545,23.0116172 16.9876958,25.4545455 20,25.4545455 C23.0123042,25.4545455 25.4545455,23.0125023 25.4545455,19.9995574 C25.4545455,16.9874977 23.0123042,14.5454545 20,14.5454545 Z M20,23.6363636 C17.9918182,23.6363636 16.3636364,22.0090909 16.3636364,20 C16.3636364,17.9918182 17.9918182,16.3636364 20,16.3636364 C22.0081818,16.3636364 23.6363636,17.9918182 23.6363636,20 C23.6363636,22.0090909 22.0081818,23.6363636 20,23.6363636 Z M25.4551768,13.6363636 C24.9526515,13.6363636 24.5454545,14.0435606 24.5454545,14.5454545 C24.5454545,15.0473485 24.9526515,15.4545455 25.4551768,15.4545455 C25.9570707,15.4545455 26.3636364,15.0473485 26.3636364,14.5454545 C26.3636364,14.0435606 25.9570707,13.6363636 25.4551768,13.6363636 Z"
+                      fill="currentColor"
+                    ></path>
+                  </g>
+                </g></svg
+            ></a>
+
+            <button class="menu__mobile_button_open" onclick="handlerMenuMoblieOpenClick()">
+              <span class="menu__mobile_button_open_line"></span>
+              <div class="menu__mobile_button_open_center">
+                <span class="menu__mobile_button_open_line"></span>
+                <span class="menu__mobile_button_open_line"></span>
               </div>
-            </div>
+              <span class="menu__mobile_button_open_line"></span>
+            </button>
           </div>
         </div>
-      </header>
-      <main class="main">
-        <div class="breadcrumbs">
-          <div class="container">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__item-link" href="index.html">Home</a>
+
+        <div class="menu__mobile">
+          <nav class="menu__mobile_nav">
+            <ul class="menu__mobile_list">
+              <li class=menu__mobile_list-item">
+                <a class="menu__mobile_list-link" href="index.html">Home</a>
               </li>
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__item-link">Contacts</a>
+              <li class=menu__mobile_list-item">
+                <a class="menu__mobile_list-link" href="gallery.html">Galerie</a>
+              </li>
+              <li class="menu__mobile_list-item">
+                <a class="menu__mobile_list-link" href="our_services.html">Unsere Leistungen</a>
+              </li>
+              <li class="menu__mobile_list-item">
+                <a class="menu__mobile_list-link" href="price.html">Preise</a>
+              </li>
+              <li class="menu__mobile_list-item">
+                <a class="menu__mobile_list-link menu__list-link--active">Buchung und Kontakt</a>
               </li>
             </ul>
-          </div>
-        </div>
-
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12610.278526502343!2d-122.41807709660443!3d37.800124476240654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580f18d8c6ea7%3A0x5d7f53fb70a3a903!2zNzI1IEdyZWVuIFN0LCBTYW4gRnJhbmNpc2NvLCBDQSA5NDEzMywg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1664100296527!5m2!1sru!2sua"
-            width="100%"
-            height="704"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+          </nav>
+          <a
+            class="instagram instagram--scrolled"
+            href="https://www.instagram.com/balticbooth/"
+            target="_blank"
           >
-          </iframe>
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 20 20"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Social/Instagram" transform="translate(-10.000000, -10.000000)">
+                  <path
+                    d="M24.0335249,11.8763976 C26.7380658,11.9994825 28.0013491,13.2827256 28.124434,15.9673067 C28.17267,17.0193498 28.1818182,17.3353786 28.1818182,20 C28.1818182,22.6654531 28.1718383,22.9806502 28.124434,24.0326933 C28.0005175,26.7147794 26.7405607,28.0005175 24.0335249,28.1236024 C22.9806502,28.1718383 22.6662847,28.1818182 20,28.1818182 C17.3353786,28.1818182 17.0193498,28.1718383 15.9673067,28.1236024 C13.2561127,27.9996858 11.9994825,26.7106212 11.8763976,24.0318616 C11.8281617,22.9798185 11.8181818,22.6646214 11.8181818,19.9991683 C11.8181818,17.3345469 11.8289933,17.0193498 11.8763976,15.9664751 C12.0003142,13.2827256 13.2602709,11.9986509 15.9673067,11.875566 C17.0201815,11.8281617 17.3353786,11.8181818 20,11.8181818 C22.6646214,11.8181818 22.9806502,11.8281617 24.0335249,11.8763976 Z M20,10 C17.2841667,10 16.9441667,10.0116667 15.8775,10.06 C12.2458333,10.2266667 10.2275,12.2416667 10.0608333,15.8766667 C10.0116667,16.9441667 10,17.2841667 10,20 C10,22.7158333 10.0116667,23.0566667 10.06,24.1233333 C10.2266667,27.755 12.2416667,29.7733333 15.8766667,29.94 C16.9441667,29.9883333 17.2841667,30 20,30 C22.7158333,30 23.0566667,29.9883333 24.1233333,29.94 C27.7516667,29.7733333 29.775,27.7583333 29.9391667,24.1233333 C29.9883333,23.0566667 30,22.7158333 30,20 C30,17.2841667 29.9883333,16.9441667 29.94,15.8775 C29.7766667,12.2491667 27.7591667,10.2275 24.1241667,10.0608333 C23.0566667,10.0116667 22.7158333,10 20,10 Z M20,14.5454545 C16.9876958,14.5454545 14.5454545,16.9874977 14.5454545,19.9995574 C14.5454545,23.0116172 16.9876958,25.4545455 20,25.4545455 C23.0123042,25.4545455 25.4545455,23.0125023 25.4545455,19.9995574 C25.4545455,16.9874977 23.0123042,14.5454545 20,14.5454545 Z M20,23.6363636 C17.9918182,23.6363636 16.3636364,22.0090909 16.3636364,20 C16.3636364,17.9918182 17.9918182,16.3636364 20,16.3636364 C22.0081818,16.3636364 23.6363636,17.9918182 23.6363636,20 C23.6363636,22.0090909 22.0081818,23.6363636 20,23.6363636 Z M25.4551768,13.6363636 C24.9526515,13.6363636 24.5454545,14.0435606 24.5454545,14.5454545 C24.5454545,15.0473485 24.9526515,15.4545455 25.4551768,15.4545455 C25.9570707,15.4545455 26.3636364,15.0473485 26.3636364,14.5454545 C26.3636364,14.0435606 25.9570707,13.6363636 25.4551768,13.6363636 Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+              </g></svg
+          ></a>
         </div>
+      </header>
 
-        <section class="contact">
-          <div class="container">
-            <div class="contact__title">Contact Us</div>
-            <div class="contact__inner">
-              <ul class="contact__social">
-                <li class="contact__social-item">
-                  <a class="contact__social-link" href="#">
-                    <img class="contact__social-img" src="images/facebook.svg" alt="facebook img" />
-                  </a>
-                </li>
-                <li class="contact__social-item">
-                  <a class="contact__social-link" href="#">
-                    <img
-                      class="contact__social-img"
-                      src="images/instagram.svg"
-                      alt="instagram img"
-                    />
-                  </a>
-                </li>
-                <li class="contact__social-item">
-                  <a class="contact__social-link" href="#">
-                    <img
-                      class="contact__social-img"
-                      src="images/pinterest.svg"
-                      alt="pinterest img"
-                    />
-                  </a>
-                </li>
-                <li class="contact__social-item">
-                  <a class="contact__social-link" href="#">
-                    <img class="contact__social-img" src="images/whatsapp.svg" alt="whatsapp img" />
-                  </a>
-                </li>
-                <li class="contact__social-item">
-                  <a class="contact__social-link" href="#">
-                    <img class="contact__social-img" src="images/youtube.svg" alt="youtube img" />
-                  </a>
-                </li>
-              </ul>
-              <p class="contact__text">
-                Vexillologist vape microdosing freegan pork belly deep v direct trade cray
-                single-origin coffee street art. Viral shaman mustache master cleanse, pour-over
-                affogato poutine copper mug marfa fanny pack normcore. Lo-fi pop-up banjo portland,
-                echo park hammock
+      <main class="main">
+        <section class="section contacts_section1" id="contacts_section1">
+          <div class="section__content">
+            <h1 class="section__title">Buchung und Kontakt</h1>
+            <img src="images/Contacts/image1.webp" alt=""
+              class="contacts_section1__title-image" 
+              alt="background"
+              loading="lazy"
+              draggable="false"/>
+            <p class="contacts_section1__subtitle">
+              Bucht jetzt Euren Baltic Booth über das Kontaktformular! 
+              <br>
+              <br>
+              Sollten noch Fragen offen geblieben sein, schreibt uns gerne eine Nachricht.
+            </p>
+
+            <form action="" class="contacts_section1__form">
+              <p class="contacts_section1__form-title">
+                Fragt gleich nach, ob Euer Termin noch frei ist...
               </p>
-              <a class="contact__phone" href="tel:+14158297934">(415) 829-7934</a>
-              <div class="contact__st">725 Green St</div>
-              <div class="contact__city">San Francisco, California(CA), 94133</div>
-              <a class="info-email" href="mailto:ouremailaddress@email.com">
-                ouremailaddress@email.com
-              </a>
-              <form class="contact__form">
-                <input class="form-input" type="text" placeholder="Your name" />
-                <input class="form-input" type="text" placeholder="Your e-mail" />
-                <textarea class="form-area" placeholder="Your message"></textarea>
-                <button class="form-button" type="submit">Send</button>
-              </form>
-            </div>
+              <label for="name">Name</label>
+              <input type="text" id="name" />
+
+              <label for="email">E-Mail-Adresse <span>(Pflichtfeld)</span></label>
+              <input type="email" id="email"
+                pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                size="30" 
+                placeholder="example@mail.com"
+                required />
+
+              <label for="phone">Telefonnummer</label>
+              <input type="tel" id="phone" name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                placeholder="000-123-4567"/>
+
+              <label for="comment">Nachricht <span>(Pflichtfeld)</span></label>
+              <textarea name="comment" id="comment" cols="30" rows="6" required ></textarea>
+
+              <div class="contacts_section1__form-link">Es gilt unsere <a href="#">Datenschutzerklärung</a>.</div>
+
+              <input type="submit" 
+                class="submit-button black-button" value="Absenden"/>
+            </form>
           </div>
         </section>
-
-        <div class="container-fluid">
-          <div class="contact-slider">
-            <!-- slide 1 -->
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/1.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/2.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/3.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/4.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/5.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/6.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/7.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/8.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/9.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/10.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-
-            <!-- slide 2 -->
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/8.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/9.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/3.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/4.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/10.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/1.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/2.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/5.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/7.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/6.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-
-            <!-- slide 3 -->
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/5.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/6.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/3.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/4.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/1.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/2.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/7.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/9.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/10.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-            <a class="contact-slider__link" href="#">
-              <img class="contact-slider__img" src="images/slider/8.jpg" alt="" />
-              <p class="contact-slider__title">Truffaut literally trust</p>
-            </a>
-          </div>
-        </div>
       </main>
       <footer class="footer">
         <div class="footer__content">
           <div class="container">
-            <div class="footer__inner">
-              <div class="footer__info">
-                <h6 class="footer__info-title">Contact Us</h6>
-                <p class="footer__info-text">
-                  Keffiyeh poutine etsy, paleo cray put a bird on it microdosing schlitz you
-                  probably occupy
-                </p>
-                <a class="info-email" href="mailto:ouremailaddress@email.com">
-                  ouremailaddress@email.com
-                </a>
-                <form class="footer__form">
-                  <input class="form-input" type="email" placeholder="Subscribe by email" />
-                  <button class="form-button" type="submit">Send</button>
-                </form>
-              </div>
-              <ul class="footer__social">
-                <li class="footer__social-item">
-                  <a class="footer__social-link footer__social-link--facebook" href="#">Facebook</a>
+            <nav class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Impressum</a>
                 </li>
-                <li class="footer__social-item">
-                  <a class="footer__social-link footer__social-link--instagram" href="#"
-                    >Instagram</a
-                  >
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Datenschutz</a>
                 </li>
-                <li class="footer__social-item">
-                  <a class="footer__social-link footer__social-link--pinterest" href="#"
-                    >Pinterest</a
-                  >
-                </li>
-                <li class="footer__social-item">
-                  <a class="footer__social-link footer__social-link--whatsApp" href="#">WhatsApp</a>
-                </li>
-                <li class="footer__social-item">
-                  <a class="footer__social-link footer__social-link--youtube" href="#">Youtube</a>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Cookie-Einstellungen</a>
                 </li>
               </ul>
-              <nav class="footer__menu">
-                <ul class="footer__menu-list">
-                  <li class="footer__menu-item">
-                    <a class="footer__menu-link" href="#">Delivery</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a class="footer__menu-link" href="#">FAQ</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a class="footer__menu-link" href="#">Help</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a class="footer__menu-link" href="#">More About Us</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-        <div class="footer__copyright">
-          <div class="container">
-            <p>674 Gonzales Drive. Washington, PA 15301</p>
+            </nav>
           </div>
         </div>
       </footer>
     </div>
 
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>

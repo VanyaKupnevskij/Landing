@@ -1,0 +1,103 @@
+.contacts_section1 {
+    align-items: center;
+    min-height: fit-content;
+
+    .section__content {
+        padding: pxToRem(80px) pxToRem(70px);
+        max-width: pxToRem(1100px);
+    }
+    
+    .section__title {
+        text-align: center;
+    }
+
+    &__title-image {
+        margin: 0 auto;
+        padding: pxToRem(30px);
+        width: min(100%, pxToRem(700px));
+    }
+    &__subtitle {
+        text-align: center;
+        font-size: pxToRem(16px);
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: pxToRem(10px);
+
+        margin-top: pxToRem(80px);
+        padding: pxToRem(30px);
+        width: 100%;
+        height: fit-content;
+
+        background-color: $white-color;
+        color: $black-color;
+
+        &-title {
+            @extend %title;
+
+            margin-bottom: pxToRem(40px);
+
+            color: $black-color;
+        }
+
+        label {
+            margin-top: pxToRem(15px);
+
+            span {
+                color: rgba($black-color, 0.3);
+            }
+        }
+        input:not(.submit-button), 
+        textarea {
+            padding: pxToRem(10px);
+            
+            outline: none;
+            border-radius: pxToRem(6px);
+            border: 1px solid rgba($black-color, 0.3);
+
+        }
+        input:not(.submit-button) {
+            font-weight: 500;
+
+            &::placeholder {
+                font-weight: 300;
+            }
+        }
+        textarea {
+            resize: vertical;
+
+            min-height: 5em;
+            max-height: 20em;
+        }
+
+        &-link {
+            margin-top: pxToRem(10px);
+
+            a {
+                border-bottom: 2px solid $black-color;
+
+                transition: $transition;
+
+                &:hover {
+                    border-bottom: 2px solid transparent;
+                }
+            }
+        }
+
+        .submit-button {
+            margin-top: pxToRem(30px);
+
+            outline: none;
+            border: none;
+        }
+    }
+
+    @media (max-width: $mobile-width) {
+        .section__content {
+            padding: pxToRem(80px) pxToRem(20px);
+            width: 100%;
+        }
+    }
+}

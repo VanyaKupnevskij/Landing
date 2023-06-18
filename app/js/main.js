@@ -69,3 +69,16 @@ function handlerMenuMoblieOpenClick() {
     menu__mobile_button_openElement.classList.remove('menu__mobile_button_open--opened');
   }
 }
+
+// gallery fancybox
+if (Fancybox) {
+  Fancybox.bind('[data-fancybox="gallery1"]', {
+    groupAll: true, // Group all items
+  });
+}
+
+// phone input
+var input = document.querySelector("#phone");
+window.intlTelInput(input, {
+  utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+});

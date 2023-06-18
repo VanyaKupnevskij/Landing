@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
-    user-scalable=no" />
-    <title>Galerie | Fotobox Hahn</title>
-    <meta name="description" content="Galerie" />
+    user-scalable=no"  />
+    <title>Preise | Fotobox Hahn</title>
+    <meta name="description" content="Preise.">
     <link rel="apple-touch-icon" href="logo512.png" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="manifest" href="manifest.json" />
@@ -31,13 +31,13 @@
                   <a class="menu__list-link" href="index.html">Home</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link menu__list-link--active">Galerie</a>
+                  <a class="menu__list-link" href="gallery.html">Galerie</a>
                 </li>
                 <li class="menu__list-item">
                   <a class="menu__list-link" href="our_services.html">Unsere Leistungen</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="price.html">Preise</a>
+                  <a class="menu__list-link menu__list-link--active">Preise</a>
                 </li>
                 <li class="menu__list-item">
                   <a class="menu__list-link" href="contacts.html">Buchung und Kontakt</a>
@@ -85,13 +85,13 @@
                 <a class="menu__mobile_list-link" href="index.html">Home</a>
               </li>
               <li class=menu__mobile_list-item">
-                <a class="menu__mobile_list-link menu__list-link--active">Galerie</a>
+                <a class="menu__mobile_list-link" href="gallery.html">Galerie</a>
               </li>
               <li class="menu__mobile_list-item">
                 <a class="menu__mobile_list-link" href="our_services.html">Unsere Leistungen</a>
               </li>
               <li class="menu__mobile_list-item">
-                <a class="menu__mobile_list-link" href="price.html">Preise</a>
+                <a class="menu__mobile_list-link menu__list-link--active">Preise</a>
               </li>
               <li class="menu__mobile_list-item">
                 <a class="menu__mobile_list-link" href="contacts.html">Buchung und Kontakt</a>
@@ -124,140 +124,44 @@
       </header>
 
       <main class="main">
-        <section class="section gallery_section gallery_section1" id="gallery_section1">
-          <div class="section__inner">
-              <h1 class="section__big_title">Galerie</h1>
-              <div class="gallery_section__list-images">
-                <a class="gallery_section__list-item" 
-                  href="images/Galery/group1_image1.webp" 
-                  data-fancybox="gallery1" data-caption="Single image">
-                  <img
-                    class="gallery_section__image"
-                    src="images/Galery/group1_image1.webp"
-                    alt="gallery"
-                    loading="lazy"
-                    draggable="false"
-                  />
-                </a>
-                <a class="gallery_section__list-item" 
-                  href="images/Galery/group1_image2.webp" 
-                  data-fancybox="gallery1" data-caption="Single image">
-                  <img
-                    class="gallery_section__image"
-                    src="images/Galery/group1_image2.webp"
-                    alt="gallery"
-                    loading="lazy"
-                    draggable="false"
-                  />
-                </a>
-                <a class="gallery_section__list-item" 
-                  href="images/Galery/group1_image3.webp"
-                  data-fancybox="gallery1" data-caption="Single image">
-                  <img
-                    class="gallery_section__image"
-                    src="images/Galery/group1_image3.webp"
-                    alt="gallery"
-                    loading="lazy"
-                    draggable="false"
-                  />
-                </a>
-                <a class="gallery_section__list-item" 
-                  href="images/Galery/group1_image4.webp"
-                  data-fancybox="gallery1" data-caption="Single image">
-                  <img
-                    class="gallery_section__image"
-                    src="images/Galery/group1_image4.webp"
-                    alt="gallery"
-                    loading="lazy"
-                    draggable="false"
-                  />
-                </a>
-              </div>
+        <section class="section price_section1" id="price_section1">
+          <div class="section__content">
+            <h1 class="section__title">Preise</h1>
           </div>
-          <a href="#gallery_section2" class="section__link_next">
-            <img src="images/icons/link-down.svg" alt="" />
-          </a>
         </section>
 
-        <section class="section gallery_section gallery_section2" id="gallery_section2">
-          <div class="section__inner">
-              <div class="gallery_section__list-images">
-                <div class="gallery_section__list-item">
-                  <img
-                    class="gallery_section__image"
-                    src="images/Galery/group2_image1.webp"
-                    alt="gallery"
-                    loading="lazy"
-                    draggable="false"
-                  />
-                </div>
-                <div class="gallery_section__list-item">
-                  <img
-                    class="gallery_section__image"
-                    src="images/Galery/group2_image2.webp"
-                    alt="gallery"
-                    loading="lazy"
-                    draggable="false"
-                  />
-                </div>
-                <div class="gallery_section__list-item">
-                  <img
-                    class="gallery_section__image"
-                    src="images/Galery/group2_image3.webp"
-                    alt="gallery"
-                    loading="lazy"
-                    draggable="false"
-                  />
-                </div>
+        <section class="section price_section2" id="price_section2">
+          <div class="section__content">
+            <dl class="price_section2__dlist">
+              <div class="price_section2__dlist-item">
+                <dt class="price_section2__dlist-title">Das Baltic-Basic-Paket</dt>
+                <dd class="price_section2__dlist-data">
+                  <p class="price_section2__dlist-data-description">
+                    Der Baltic Booth mit Blitz, Kamera und großem Zubehör-Paket.
+                  </p>
+                  <div class="price_section2__dlist-data-value">250 <em>€&nbsp;</em></div>
+                </dd>
               </div>
-          </div>
-          <a href="#gallery_section3" class="section__link_next">
-            <img src="images/icons/link-down.svg" alt="" />
-          </a>
-        </section>
-
-        <section class="section gallery_section gallery_section3" id="gallery_section3">
-          <div class="section__inner">
-              <div class="gallery_section__list-images">
-                <div class="gallery_section__list-item">
-                  <img
-                    class="gallery_section__image"
-                    src="images/Galery/group3_image1.webp"
-                    alt="gallery"
-                    loading="lazy"
-                    draggable="false"
-                  />
-                </div>
-                <div class="gallery_section__list-item">
-                  <img
-                    class="gallery_section__image"
-                    src="images/Galery/group3_image2.webp"
-                    alt="gallery"
-                    loading="lazy"
-                    draggable="false"
-                  />
-                </div>
-                <div class="gallery_section__list-item">
-                  <img
-                    class="gallery_section__image"
-                    src="images/Galery/group3_image3.webp"
-                    alt="gallery"
-                    loading="lazy"
-                    draggable="false"
-                  />
-                </div>
-                <div class="gallery_section__list-item">
-                  <img
-                    class="gallery_section__image"
-                    src="images/Galery/group3_image4.webp"
-                    alt="gallery"
-                    loading="lazy"
-                    draggable="false"
-                  />
-                </div>
+              <div class="price_section2__dlist-item">
+                <dt class="price_section2__dlist-title">Das Baltic-Print-Paket</dt>
+                <dd class="price_section2__dlist-data">
+                  <p class="price_section2__dlist-data-description">
+                    Ihr bekommt alles was im Basic-Paket enthalten ist und zusätzlich einen professionellen Sofortbilddrucker, welcher mit bestem Material für 300 professionelle Fotos in 10 x 15 cm, in matt oder glänzen, ausgestattet ist. 
+                  </p>
+                  <div class="price_section2__dlist-data-value">350 <em>€&nbsp;</em></div>
+                </dd>
               </div>
+              <div class="price_section2__dlist-item">
+                <dt class="price_section2__dlist-title">Das Baltic-Print-Paket <b>Plus</b></dt>
+                <dd class="price_section2__dlist-data">
+                  <p class="price_section2__dlist-data-description">
+                    Die 300 Ausdrucke im Baltic-Print-Paket sind nicht genug? Kein Problem - Ihr bekommt Material für 300 zusätzliche Bilder und eine Einweisung zum Wechseln des Druckermaterials. Dieses Paket kann mehrmals oder auch vorsorglich gebucht werden. Abgerechnet wird je angefangene 300 zusätzliche Bilder. (Dieses Paket kann nur zusätzlich zum Baltic-Print-Paket gebucht werden.)
+                  </p>
+                  <div class="price_section2__dlist-data-value">120 <em>€&nbsp;</em></div>
+                </dd>
+              </div>
+            </dl>
           </div>
-          
         </section>
       </main>
       <footer class="footer">
@@ -281,12 +185,6 @@
       </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-    />
     <script src="js/main.min.js"></script>
-
   </body>
 </html>
