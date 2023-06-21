@@ -77,8 +77,12 @@ if (Fancybox) {
   });
 }
 
-// phone input
-var input = document.querySelector("#phone");
-window.intlTelInput(input, {
-  utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+document.querySelector('form.form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const formData = new FormData(this);
+  const entires = formData.entries();
+
+  for (var input of entires) {
+    console.log(input[0] + ': ' + input[1]);
+  }
 });

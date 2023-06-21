@@ -15,10 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300;500&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
-    />
     <link rel="stylesheet" href="css/style.min.css" />    
   </head>
 
@@ -143,7 +139,7 @@
               Sollten noch Fragen offen geblieben sein, schreibt uns gerne eine Nachricht.
             </p>
 
-            <form action="" class="contacts_section1__form">
+            <form action="" class="contacts_section1__form" method="">
               <p class="contacts_section1__form-title">
                 Fragt gleich nach, ob Euer Termin noch frei ist...
               </p>
@@ -158,9 +154,9 @@
                 required />
 
               <label for="phone">Telefonnummer</label>
-              <input type="tel" id="phone" name="phone"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
-                placeholder="000-123-4567"/>
+              <input type="tel" id="phone-input" name="phone"
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}" 
+                placeholder="(000) 123 4567"/>
 
               <label for="comment">Nachricht <span>(Pflichtfeld)</span></label>
               <textarea name="comment" id="comment" cols="30" rows="6" required ></textarea>
@@ -195,7 +191,14 @@
     </div>
 
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
     <script src="js/main.min.js"></script>
+
+    <script>
+      var input = document.getElementById('phone-input');
+      window.intlTelInput(input);
+    </script>
   </body>
 </html>
