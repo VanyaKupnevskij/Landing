@@ -69,15 +69,3 @@ function handlerMenuMoblieOpenClick() {
     menu__mobile_button_openElement.classList.remove('menu__mobile_button_open--opened');
   }
 }
-
-// const form = document.getElementsByTagName('form')[0];
-
-// form.addEventListener('submit', function (e) {
-//   e.preventDefault();
-//   const formData = new FormData(form);
-//   const entires = formData.entries();
-
-//   for (var input of entires) {
-//     console.log(input[0] + ': ' + input[1]);
-//   }
-// });

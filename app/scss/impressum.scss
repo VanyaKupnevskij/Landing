@@ -1,0 +1,35 @@
+.impressum {
+  background-color: $white-color;
+
+  &__title {
+    @extend %title;
+
+    color: $black-color;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: pxToRem(40px);
+
+    margin: 0 auto;
+    padding: pxToRem(100px) pxToRem(20px);
+    width: min(100%, pxToRem(800px));
+  }
+
+  &__paragraph {
+    &_title {
+      @extend %little_title;
+
+      color: $black-color;
+
+      font-family: $main-font-family;
+      font-size: pxToRem(18px);
+      font-weight: 500;
+    }
+    &_text {
+      margin-top: pxToRem(20px);
+      color: $black-color;
+    }
+  }
+}
