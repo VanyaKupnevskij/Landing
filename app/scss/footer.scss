@@ -23,6 +23,7 @@
     font-size: pxToRem(16px);
 
     transition: all 100ms;
+    cursor: pointer;
 
     &:hover {
       color: rgba($white-color, 0.7);

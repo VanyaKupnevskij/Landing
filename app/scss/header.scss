@@ -239,8 +239,7 @@
   }
 }
 
-.header:not(.home_header),
-.header:not(.license_header) {
+.header:not(.home_header):not(.license_header) {
   color: $white-color;
 
   .instagram {

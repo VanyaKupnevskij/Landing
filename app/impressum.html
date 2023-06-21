@@ -215,7 +215,7 @@
             <nav class="footer__menu">
               <ul class="footer__menu-list">
                 <li class="footer__menu-item">
-                  <a class="footer__menu-link" href="#">Impressum</a>
+                  <a class="footer__menu-link">Impressum</a>
                 </li>
                 <li class="footer__menu-item">
                   <a class="footer__menu-link" href="#">Datenschutz</a>
@@ -230,25 +230,6 @@
       </footer>
     </div>
 
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-
     <script src="js/main.min.js"></script>
-
-    <script>
-      const form = document.getElementById('form-contacts');
-      const inputPhone = document.getElementById('phone-input');
-      window.intlTelInput(inputPhone, {
-        separateDialCode: true,
-        initialCountry: 'de',
-      });
-      var iti = window.intlTelInputGlobals.getInstance(inputPhone);
-
-      inputPhone.addEventListener('input', function (e) {
-        const fullNumber = iti.getSelectedCountryData().dialCode;
-        document.getElementById('fullNumber').value = fullNumber + e.target.value;
-      });
-    </script>
   </body>
 </html>
