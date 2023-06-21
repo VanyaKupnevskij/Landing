@@ -139,15 +139,15 @@
               Sollten noch Fragen offen geblieben sein, schreibt uns gerne eine Nachricht.
             </p>
 
-            <form action="" class="contacts_section1__form" method="">
+            <form id="form-contacts" class="contacts_section1__form" >
               <p class="contacts_section1__form-title">
                 Fragt gleich nach, ob Euer Termin noch frei ist...
               </p>
               <label for="name">Name</label>
-              <input type="text" id="name" />
+              <input type="text" id="name" name="name" />
 
               <label for="email">E-Mail-Adresse <span>(Pflichtfeld)</span></label>
-              <input type="email" id="email"
+              <input type="email" id="email" name="email"
                 pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                 size="30" 
                 placeholder="example@mail.com"
@@ -155,11 +155,12 @@
 
               <label for="phone">Telefonnummer</label>
               <input type="tel" id="phone-input" name="phone"
-                pattern="[0-9]{3}[0-9]{3}[0-9]{4}" 
+                pattern="[0-9]+" 
                 placeholder="(000) 123 4567"/>
+              <input id="fullNumber" type="text" name="fullNumber" hidden>
 
               <label for="comment">Nachricht <span>(Pflichtfeld)</span></label>
-              <textarea name="comment" id="comment" cols="30" rows="6" required ></textarea>
+              <textarea name="comment" id="comment" name="comment" cols="30" rows="6" required ></textarea>
 
               <div class="contacts_section1__form-link">Es gilt unsere <a href="#">Datenschutzerklärung</a>.</div>
 
@@ -197,8 +198,18 @@
     <script src="js/main.min.js"></script>
 
     <script>
-      var input = document.getElementById('phone-input');
-      window.intlTelInput(input);
+      const form = document.getElementById('form-contacts');
+      const inputPhone = document.getElementById('phone-input');
+      window.intlTelInput(inputPhone, {
+        separateDialCode: true,
+        initialCountry: 'de',
+      });
+      var iti = window.intlTelInputGlobals.getInstance(inputPhone);
+
+      inputPhone.addEventListener('input', function (e) {
+        const fullNumber = iti.getSelectedCountryData().dialCode;
+        document.getElementById('fullNumber').value = fullNumber + e.target.value;
+      });
     </script>
   </body>
 </html>

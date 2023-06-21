@@ -70,19 +70,14 @@ function handlerMenuMoblieOpenClick() {
   }
 }
 
-// gallery fancybox
-if (Fancybox) {
-  Fancybox.bind('[data-fancybox="gallery1"]', {
-    groupAll: true, // Group all items
-  });
-}
+// const form = document.getElementsByTagName('form')[0];
 
-document.querySelector('form.form').addEventListener('submit', function (e) {
-  e.preventDefault();
-  const formData = new FormData(this);
-  const entires = formData.entries();
+// form.addEventListener('submit', function (e) {
+//   e.preventDefault();
+//   const formData = new FormData(form);
+//   const entires = formData.entries();
 
-  for (var input of entires) {
-    console.log(input[0] + ': ' + input[1]);
-  }
-});
+//   for (var input of entires) {
+//     console.log(input[0] + ': ' + input[1]);
+//   }
+// });
