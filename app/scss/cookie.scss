@@ -1,0 +1,56 @@
+.cookie {
+  background-color: $white-color;
+
+  &__title {
+    @extend %title;
+
+    color: $black-color;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: pxToRem(40px);
+
+    margin: 0 auto;
+    padding: pxToRem(100px) pxToRem(20px);
+    width: min(100%, pxToRem(800px));
+  }
+
+  &__paragraph {
+    &_title {
+      @extend %little_title;
+
+      color: $black-color;
+    }
+    &_text {
+      margin-top: pxToRem(20px);
+      color: $black-color;
+    }
+    &_label {
+      padding: pxToRem(10px);
+
+      background-color: rgba($black-color, 0.05);
+      color: $black-color;
+    }
+    & a {
+      position: relative;
+
+      transition: $transition;
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+
+        background-color: $black-color;
+      }
+      &:hover::after {
+        background-color: transparent;
+      }
+    }
+  }
+}
